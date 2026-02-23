@@ -211,6 +211,68 @@ footer a:hover{
   text-decoration: underline;
 }
 
+.howto-main{
+  padding: 20px;
+}
+
+.howto-section{
+  background: #dedcff;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.howto-section h2{
+  color: #3e36d4;
+  margin-top: 0;
+}
+
+.howto-section ul,
+.howto-section ol{
+  padding-left: 20px;
+}
+
+.pricing-main{
+  padding: 20px;
+}
+
+.pricing-section{
+  background: #dedcff;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.pricing-section h2{
+  text-align: center;
+  color: #3e36d4;
+  margin-top: 0;
+}
+
+.pricing-table{
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  background: #fbfbfe;
+}
+
+.pricing-table th,
+.pricing-table td{
+  border: 2px solid #3e36d4;
+  padding: 10px;
+  text-align: left;
+}
+
+.pricing-table th{
+  background: #3e36d4;
+  color: #ffffff;
+  text-align: center;
+}
+
+.pricing-table td:last-child{
+  font-weight: bold;
+  text-align: center;
+}
+
 @media (max-width: 900px){
   main{ flex-direction: column; }
   .features, .side{ width: 100%; }
