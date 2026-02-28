@@ -53,6 +53,11 @@ nav a:hover{
   background: #3bffc4;  
 }
 
+nav a:focus, .cta-button:focus, footer a:focus, .submit-button:focus{
+  outline: 3px solid #3bffc4;
+  outline-offset: 2px;
+}
+
 .hero{
   position: relative;
 }
@@ -240,6 +245,8 @@ footer a:hover{
   background: #dedcff;
   padding: 15px;
   border-radius: 10px;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .pricing-section h2{
@@ -271,6 +278,114 @@ footer a:hover{
 .pricing-table td:last-child{
   font-weight: bold;
   text-align: center;
+}
+
+/* ===== About Us Page ===== */
+
+.about-main{
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.about-section{
+  width: 60%;
+  background: #dedcff;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.contact-section{
+  width: 40%;
+  background: #dedcff;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.about-section h2,
+.contact-section h2{
+  color: #3e36d4;
+  margin-top: 0;
+}
+
+/* Contact Form Styling */
+
+.contact-section input,
+.contact-section textarea{
+  width: 100%;
+  padding: 8px;
+  border: 2px solid #3e36d4;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+.submit-button{
+  background: #3e36d4;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.submit-button:hover{
+  background: #3bffc4;
+  color: #050315;
+}
+
+.required {
+  color: red;
+  font-weight: bold;
+}
+
+.required-note {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 900px){
+  .about-main{
+    flex-direction: column;
+  }
+  .about-section,
+  .contact-section{
+    width: 100%;
+  }
+}
+
+/* ===== FAQ Page ===== */
+
+.faq-main{
+  padding: 20px;
+}
+
+.faq-section{
+  background: #dedcff;
+  padding: 15px;
+  border-radius: 10px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq-section h2{
+  color: #3e36d4;
+  margin-top: 0;
+  text-align: center;
+}
+
+.faq-list{
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.faq-list li{
+  background: #fbfbfe;
+  border: 2px solid #3e36d4;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 12px;
 }
 
 @media (max-width: 900px){
